@@ -17,7 +17,7 @@ try {
 
 try {
   JsonToTS(JSON.parse(contents)).forEach(typeInterface => {
-    console.log(typeInterface);
+    console.log(`export ${typeInterface}`);
   });
 } catch (e) {
   return console.error(e);
